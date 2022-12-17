@@ -44,10 +44,10 @@ const Stream = ({ className, addonName, name, description, thumbnail, progress, 
                     const serverUrl = streamingServer.selected.transportUrl;
 
                     window.location.href =
-                        "outplayer" + serverUrl.split("http")[1] + infoHash + "/" + fileIdx;
+                        "infuse" + serverUrl.split("http")[1] + infoHash + "/" + fileIdx;
                 } else {
                     window.location.href =
-                        "outplayer" +
+                        "infuse" +
                         Buffer.from(
                             deepLinks.externalPlayer.href.split("base64,")[1].split('"')[0],
                             "base64"

@@ -161,7 +161,7 @@ const Video = ({ className, id, title, thumbnail, episode, released, upcoming, w
             scheduled={scheduled}
             href={href}
             {...props}
-            onClick={popupLabelOnClick}
+            onClick={popupLabelOnContextMenu}
             onKeyDown={popupLabelOnKeyDown}
             onContextMenu={popupLabelOnContextMenu}
             open={menuOpen}

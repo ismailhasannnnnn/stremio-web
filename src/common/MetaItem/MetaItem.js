@@ -20,11 +20,11 @@ const MetaItem = React.memo(({ className, type, name, poster, posterShape, playI
             typeof deepLinks.player === 'string' ?
                 deepLinks.player
                 :
-                typeof deepLinks.metaDetailsStreams === 'string' ?
-                    deepLinks.metaDetailsStreams
+                typeof deepLinks.metaDetailsVideos === 'string' ?
+                    deepLinks.metaDetailsVideos
                     :
-                    typeof deepLinks.metaDetailsVideos === 'string' ?
-                        deepLinks.metaDetailsVideos
+                    typeof deepLinks.metaDetailsStreams === 'string' ?
+                        deepLinks.metaDetailsStreams
                         :
                         null
             :
